@@ -7,7 +7,6 @@
 
     .parallax-key-container {
         position: absolute;
-        /* top: 2px; */
         right: calc(50% - 13vw);
         z-index: 10;
         pointer-events: none;
@@ -21,11 +20,13 @@
 ::-webkit-scrollbar{
     width: 0.2rem;
     height: 1rem;
+    -webkit-overflow-scrolling: touch;
 }
 
 ::-webkit-scrollbar-thumb{
     background: #BE3734;
-    border-radius: .4rem;;
+    border-radius: .4rem;
+    -webkit-overflow-scrolling: touch;
 }
 
 ::-webkit-scrollbar-track{
@@ -966,14 +967,9 @@ button img{
        
 
 .container .common-fram {
-    /* position: relative; */
-    /* height: 850px; */
-    /* background: url(../img/pan.png) center / contain no-repeat; */
-    /* border-radius: 20px; */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* overflow: hidden; */
     margin-top: 4rem;
     gap: 5rem;
     margin-bottom: 7rem;
@@ -984,7 +980,6 @@ button img{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex: 1; */
     background: url(../img/pan.png) center / contain no-repeat;
     padding: 7rem 0;
     width: 780px;
@@ -997,7 +992,6 @@ button img{
     /* Swiper 스타일 -------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 .poster-mySwiper {
     width: 370px;
-    /* height: 750px; */
     aspect-ratio: 2/3;
 }
     
@@ -1005,7 +999,6 @@ button img{
       width: 100%;
       height: 100%;
       object-fit: cover; 
-      /* border-radius: 18px;  */
       display: block;
     }
     .swiper-slide {
@@ -1121,7 +1114,6 @@ button img{
 .title {
     font-size: 4.5rem;
     color: #BE3734;
-    /* margin-bottom: 1rem; */
     margin-top: 2rem;
 }
 
